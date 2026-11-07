@@ -2,20 +2,28 @@
   "name": "dumka-academy",
   "version": "0.1.0",
   "private": true,
-  "workspaces": [
-    "frontend",
-    "backend"
-  ],
   "scripts": {
-    "dev": "concurrently -n api,web -c green,blue \"npm run dev -w backend\" \"npm run dev -w frontend\"",
-    "dev:api": "npm run dev -w backend",
-    "dev:web": "npm run dev -w frontend",
-    "build": "npm run build -w backend && npm run build -w frontend",
-    "start": "concurrently -n api,web -c green,blue \"npm run start -w backend\" \"npm run start -w frontend\"",
-    "lint": "npm run lint -w frontend",
-    "typecheck": "npm run typecheck -w backend && npm run typecheck -w frontend"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "typecheck": "next typegen && tsc --noEmit"
+  },
+  "dependencies": {
+    "lucide-react": "^1.70.0",
+    "next": "16.4.5",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "mongodb": "^7.8.0"
   },
   "devDependencies": {
-    "concurrently": "^9.2.0"
+    "@tailwindcss/turbopack": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.5",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
