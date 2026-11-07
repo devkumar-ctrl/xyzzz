@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Dumka Academy Desk
 
 A working sports-academy desk for **coaches, players, and scouts**. Track attendance, record matches, and decide who is ready for a trial — with a separate Next.js frontend and Express/MongoDB API.
@@ -156,3 +157,7 @@ Deploy the frontend to Vercel and the backend to a Node host (Render, Railway, F
 - The sample-data button only loads into an empty academy, so it cannot duplicate players.
 - Change the demo passwords and `AUTH_SECRET` before using real academy data.
 - Session cookies are httpOnly, SameSite=Lax, signed with HMAC-SHA256, and expire after 7 days.
+=======
+# xyzzz
+idn
+>>>>>>> 772585f8b4270c08201ff975098772ba7813275a
